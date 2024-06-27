@@ -12,7 +12,7 @@ jobs:
         uses: actions/setup-java@v4
         with:
           java-version: '21'
-          distribution: 'correto'
-          architecture: x64
+          distribution: 'temurin'
+          # architecture: x64
       - name:  Build with Maven library 
         run: mvn -B package --file pom.xml
